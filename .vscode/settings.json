@@ -1,0 +1,35 @@
+{
+    "jshint.options": {
+      "esversion": 6
+    },
+    "editor.tabSize": 2,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    },
+    "files.associations": {
+      "*.template": "yaml"
+    },
+    "[yaml]": {
+      "editor.formatOnSave": false
+    },
+    "[typescript]": {
+      "editor.formatOnSave": true
+    },
+    "[javascript]": {
+      "editor.formatOnSave": true
+    },
+    "prettier.singleQuote": true,
+    "git.ignoreLimitWarning": true,
+    "yaml.customTags": [
+      "!Equals sequence",
+      "!FindInMap sequence",
+      "!GetAtt",
+      "!GetAZs",
+      "!ImportValue",
+      "!Join sequence",
+      "!Ref",
+      "!Select sequence",
+      "!Split sequence",
+      "!Sub"
+  ]
+  }

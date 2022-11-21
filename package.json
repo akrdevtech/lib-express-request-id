@@ -1,0 +1,46 @@
+{
+  "name": "@akrdevtech/lib-express-request-id",
+  "version": "1.0.0",
+  "description": "Request/ Transaction id generator for Express Js",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "prebuild": "npm run lint:fix",
+    "build": "tsc --build tsconfig.json",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --fix --ext .ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akrdevtech/lib-express-request-id.git"
+  },
+  "keywords": [
+    "express",
+    "middleware",
+    "request id",
+    "uuid",
+    "transaction id"
+  ],
+  "author": "Akhil Krishnan R",
+  "license": "ISC",
+  "files": [
+    "dist/**/*"
+  ],
+  "bugs": {
+    "url": "https://github.com/akrdevtech/lib-express-request-id/issues"
+  },
+  "homepage": "https://github.com/akrdevtech/lib-express-request-id#readme",
+  "devDependencies": {
+    "@types/express": "^4.17.14",
+    "@types/jest": "^29.2.2",
+    "@typescript-eslint/eslint-plugin": "^5.42.1",
+    "@typescript-eslint/parser": "^5.42.1",
+    "eslint": "^8.27.0",
+    "express": "^4.18.2",
+    "jest": "^29.3.1",
+    "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.8.4"
+  }
+}

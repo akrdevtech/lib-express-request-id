@@ -13,6 +13,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "prebuild": "npm run lint:fix",
     "build:cjs": "tsc --build tsconfig.json",
     "build:esm": "tsc --build tsconfig.esm.json",
     "build": "npm run build:cjs && npm run build:esm",

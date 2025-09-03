@@ -2,15 +2,25 @@
   "name": "@akrdevtech/lib-express-request-id",
   "version": "1.0.2",
   "description": "Request/ Transaction id generator for Express Js",
-  "main": "dist/index.js",
-  "type": "module",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/cjs/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js"
+    }
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc",
-    "prebuild": "npm run lint:fix",
-    "build": "tsc --build tsconfig.json",
+    "build:cjs": "tsc --build tsconfig.json",
+    "build:esm": "tsc --build tsconfig.esm.json",
+    "build": "npm run build:cjs && npm run build:esm",
     "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --fix --ext .ts"
+    "lint:fix": "eslint . --fix --ext .ts",
+    "version:up": "npm version patch && npm install && npm run build",
+    "publish": "npm publish",
+    "publish:up": "npm run version:up && npm run publish"
   },
   "repository": {
     "type": "git",

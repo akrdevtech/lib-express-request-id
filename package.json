@@ -1,6 +1,6 @@
 {
   "name": "@akrdevtech/lib-express-request-id",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Request/ Transaction id generator for Express Js",
   "main": "dist/index.js",
   "scripts": {
